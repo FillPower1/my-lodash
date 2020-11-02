@@ -1,8 +1,4 @@
-const { data } = require('../mock-data')
-
-const { arrays } = data
-
-function flat(arr) {
+export function flat(arr) {
     let result = []
 
     for (const elem of arr) {

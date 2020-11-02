@@ -1,4 +1,4 @@
-const { data } = require('../mock-data')
+const { data } = require('../../mock-data')
 
 const { cart } = data.objects
 
@@ -26,6 +26,3 @@ function getProp(object, keys, defaultVal) {
     }
     return object === undefined ? defaultVal : object
 }
-
-// console.log(get(cart, ['mobile', 'memory', 'max'], 'default'))
-// console.log(getProp(cart, 'mobile.memory.max'))

@@ -5,11 +5,15 @@
     "main": "webpack.config.js",
     "scripts": {
         "start": "webpack-dev-server --mode development --open",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "test": "jest",
+        "test:watch": "jest --watch"
     },
     "keywords": [
         "native",
-        "js"
+        "js",
+        "lodash",
+        "my-lodash"
     ],
     "author": "FillPower",
     "license": "ISC",
@@ -19,7 +23,8 @@
         "babel-loader": "^8.1.0",
         "webpack": "^4.44.2",
         "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
+        "webpack-dev-server": "^3.11.0",
+        "jest": "^25.2.0"
     },
     "dependencies": {
         "lodash": "^4.17.20"

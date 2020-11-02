@@ -86,3 +86,24 @@ const getReduceItemsIds = (items) => {
 }
 
 console.log(getReduceItemsIds(items))
+
+const students = [
+    {
+        name: 'john',
+        userId: '123123',
+    },
+    {
+        name: 'Chris',
+        userId: '95125',
+    },
+    {
+        name: 'Piter',
+        userId: '592096',
+    },
+]
+
+const studentObj = students.reduce((acc, student) => {
+    return { ...acc, [student.name]: student }
+}, {})
+
+console.log(JSON.stringify(studentObj, null, 2))
