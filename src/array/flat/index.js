@@ -20,5 +20,15 @@ function flattenDeep(arr) {
     }
 }
 
-// console.log(flat(arrays))
+console.log(
+    flat([
+        1,
+        'any [complex] string',
+        null,
+        function () {},
+        [1, 2, [3, '4'], 0],
+        [],
+        { a: 1 },
+    ])
+)
 // console.log(flattenDeep(arrays))
